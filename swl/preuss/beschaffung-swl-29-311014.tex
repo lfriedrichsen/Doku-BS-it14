@@ -1,0 +1,126 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\					< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 				< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{BWP/LF 8/Pr}
+\chead{Thema: Beschaffung}
+\rhead{Datum: 29.10.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.1 - \today}
+
+
+% Header
+\title{Beschaffungsablauf}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Situation (Zusammenfassung)}
+
+Die Stadt Flensburg beauftragt die \glqq Otto Dattelmann KG\grqq 150 Pcs und 200 Monitore zu liefern.
+Die OD KG hat die Ware nicht am Lager und muss bestellen. \\[0.5cm]
+Wie sieht der Beschaffungsvorgang aus?
+	\subsection{Allgemeine Möglichkeiten für die Warenbeschaffung}
+
+		\begin{enumerate}
+			\item bekannte Lieferanten
+			\item neue Lieferanten
+			\item Neubestellung nicht gelisteter Ware bei bekannten / unbekannten Lieferanten
+		\end{enumerate}
+		
+	\subsection{Bezugsquellenermittlung}
+	
+		\begin{tabular}{|l|l|}
+			\hline
+			interne Bezugsquellen			&	externe Bezugsquellen\\ \hline
+			bekannter Lieferant				&	Internetrecherche \\ \hline
+			eigene Erfahrung / Mitarbeiter	&	Empfehlung von Dienstleister(Branchenbuch, gelbe Seiten)\\ \hline
+			alte Angebote					&	Wirtschaftsverband \\ \hline
+			Besuch von Vertretern			&	Geschäftsberichte \\ \hline
+			Messebesuche						&	\\ \hline
+		\end{tabular}
+
+	\subsection{Die Anfrage}
+	
+		\begin{enumerate}
+			\item \textbf{allgemeine Anfrage:} Bsp.: Preisliste Prospekte
+			\item \textbf{bestimmte Anfrage:} Bsp.: Bestimmtes Produkt / Menge / Qualität / Termin
+		\end{enumerate}
+		
+	\textbf{Rechtliche Bindung:} Eine Anfrage hat \textbf{keine} rechtliche Bindung und iat demnach unverbindlich. Der potentielle Käufer ist nicht verpflichtet die Ware zu kaufen.\\[0.5cm]
+	
+	\subsection{Aufgaben}
+	
+		\begin{enumerate}
+			\item Warum müssen Unternehmen mit festen Lieferanten immer auch bei möglichen neuen Informationsquellen anfragen? \par
+			
+			\item Nennen Sie Vor- und Nachteile einer telefonischen Anfrage. \par
+			
+			\item Warum richtet ein Unternehmen, dass ein Sortiment erweitern will, Anfragen an verschiedene Lieferanten? \par
+			
+		\end{enumerate}
+\section{Beschaffungsplanung}
+ 	
+ 	\subsection{Was soll bestellt werden?}
+ 		
+ 		\begin{itemize}
+ 			\item \textbf{Ziele:} bedarfsorientiertes Sortiment
+ 			\item \textbf{Sortimentsplanung} abhängig von: Bedarf, Kundenwunsch, Art, Güte und Beschaffenheit, Lieferbereitschaft, Geschäftszweig, 
+ 		\end{itemize}
+ 		
+ 	\subsection{Wie viel soll bestellt werden?}
+ 	
+ 		\begin{itemize}
+ 			\item \textbf{Ziele:} optimale Bestellmenge
+ 			\item \textbf{Mengenplanung} abhängig von: Lagerkapazität, Haltbarkeit, Durchschnittsverbrauch, Saison
+ 		\end{itemize}
+ 		
+	\subsection{Wann soll bestellt werden?}
+ 	
+ 		\begin{itemize}
+ 			\item \textbf{Ziele:} Termingerechte Lieferung, geringer Einstandspreis
+ 			\item \textbf{Zeitplanung} abhängig von: Warenbestand, 
+ 		\end{itemize}
+ 		
+ 	\subsection{Zu welchem Preis soll bestellt werden?}
+ 	
+ 		\begin{itemize}
+ 			\item \textbf{Ziele:} Möglichst günstiger EK \footnote{Einkaufspreis}
+ 			\item \textbf{Preisplanung} abhängig von: Budget, Kosten, Marktlage
+ 		\end{itemize}
+ 		
+ 	\subsection{Wo soll bestellt werden?}
+ 	
+ 		\begin{itemize}
+ 			\item \textbf{Ziele:}Aufbau eines zuverlässigen Lieferantenstamms
+ 			\item \textbf{Bezugsquellenermittlung} abhängig von: Angebot, Reputation
+ 		\end{itemize}
+\end{document}
