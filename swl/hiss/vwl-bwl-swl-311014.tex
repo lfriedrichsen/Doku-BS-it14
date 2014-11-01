@@ -1,0 +1,121 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 1 / Hi}
+\chead{Thema: Grundlagen des wirtschaftens}
+\rhead{Datum: 31.10.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Beschaffungsablauf}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Wirtsschaftswissenschaften}
+
+Im speziellen beschäftigen wir uns zunächst mit dem Gegenstand und der Abgrenzung des Faches BWL.
+Somit beschäftigen wir uns zunächst mit den verschiedenen Disziplinen der \textbf{Wirtschaftswissenschaften}.
+Zu ihnen gehören folgende Unterdisziplinen:
+
+	\begin{itemize}
+		\item Recht
+		\item Mathematik
+		\item Informatik
+		\item Psychologie
+		\item Soziologie
+		\item \dots
+	\end{itemize}
+
+
+Die Wirtschaftswissenschaften sind in zwei große Bereiche unterteilt. Diese beiden Bereiche werden im folgenden näher betrachtet.
+
+	\subsection{BWL (Betriebswirtschaftslehre)}
+	
+	Der Gegenstand der der \textbf{BWL} ist der einzelne Betrieb bzw. die einzelne Unternehmung.
+	
+		\begin{itemize}
+			\item Einkauf, Fertigung, Absatz
+			\item Lagerhaltung
+			\item Finanzierung
+			\item Kalkulation (-> Kostenrechnung)
+			\item Buchführung
+			\item Organisation
+			\item \dots
+		\end{itemize}
+
+
+
+
+
+	\subsection{VWL (Volkswirtschaftslehre)}
+	
+	Die \textbf{VWL} beschäftigt sich mit der gesamten Wirtschaft, z.B. der eines Landes.
+	
+		\begin{itemize}
+			\item Leistung der gesamten Wirtschaft (-> Bruttosozialprodukt)
+			\item Ländervergleich
+			\item Wirtschaftssysteme
+			\item Rolle des Staates in der Wirtschaft (-> Wirtschaftspolitik)
+			\item \dots
+		\end{itemize}
+	
+\section{Die drei Wirtschaftssektoren}
+
+Die Wirtschaft ist in drei verscheiden Bereiche unterteilt. Jedem Sektor ist eine bestimmte Rolle zugewiesen.
+Diese Aufteilung folgt dem Prinzip der Wirtschaftswissenschaften, nämlich der vereinfachten Darstellung von 
+komplexen Abläufen.\\[0.5cm]
+Im folgenden sind die verschieden Sektoren und deren Rolle zusammengefasst. \\
+
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\textbf{primärer Sektor}	&	\textbf{sekundärer Sektor}	&	\textbf{tertiärer Sektor} \\ \hline
+		\= Urproduktion				&	\= Produktion				&	\= Dienstleistungen \\ \hline
+		Land- u. Forstwirtschaft	& 	Industrie, Handwerk			&	Handel, Banken, Transport \\ \hline
+	\end{tabular}
+
+	\subsection{Entwicklung der Beschäftigung in den verschiedenen Sektoren}
+	
+	Es ist zu beobachten, dass es innerhalb der letzten 100 Jahre zu einer stetigen Verschiebung der Beschäftigungsverhältnisse gekommen ist.
+	Dazu sei gesagt, dass sich die Verschiebung zum \textbf{tertiären} Sektor hinbewegt. Als Begründung seien die
+	folgenden Punkte genannt:
+		
+		\begin{itemize}
+			\item Automatisierung durch technischen Fortschritt
+			\item Globalisierung -> Auslagerung der Arbeitsplätze			
+		\end{itemize}		 
+
+	
+	
+\end{document}
