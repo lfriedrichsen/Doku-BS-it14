@@ -1,0 +1,79 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\					< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 				< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Elektrotechnik}
+\chead{Thema: Der elektrische Strom}
+\rhead{Datum: 30.10.2014}
+\lfoot{}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Beschaffungsablauf}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Wirkung des elektrischen Stromes}
+
+
+	\subsection{Wirkungsarten und Beispiele}
+
+		\begin{enumerate}
+			\item physiologische Wirkung (Weidezaun, Medizin)
+			\item Magnetismus (Lautsprecher, Festplatte, Lüftermotoren)
+			\item Wärmewirkung (Laserdrucker, Grafikkarte)
+			\item Lichtwirkung (Lampen)
+			\item chemische Wirkung (Batterien, Akkus)
+		\end{enumerate}
+			
+	\subsection{Bezeichnung eines Diagramms}
+	
+	Ein Diagramm ist in X- und Y-Achse dargestellt. Die X-Achse ist die Abszisse und die Y-Achse die Ordinate.
+		\begin{itemize}
+			\item Auf der Abszisse wird immer die \textbf{veränderliche} Größe angegeben.
+			\item Auf der Ordinate wird die davon \textbf{abhängige} Größe dargestellt.
+		\end{itemize}
+		
+	\subsection{Messung von Spannung und Stromstärke}
+	
+	Die Spannung wird immer \textbf{parallel} zum Verbraucher gemessen; die Stromstärke hingegen in \textbf{reihe}.
+		
+		\begin{enumerate}
+			\item{Die richtige Spannungsart muss ausgewählt werden (AC/DC).}
+    		\item{Bei Gleichspannung (DC) muss die Polarität beachtet werden.}
+    		\item{richtige Messbereich muss eingestellt werden.}
+    		\item{Bei einem unbekannten Messwert muss der größte Messbereich eingestellt und langsam in die niedrigeren Messbereich geschaltet werden.}
+    		\item{Der Messbereich muss möglichst so eingestellt werden, dass der Zeigerausschlag im letzten Drittel abgelesen werden kann.}
+		\end{enumerate}
+		
+\end{document}
