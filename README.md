@@ -9,7 +9,5 @@ Ziel ist es eine vollwertige Dokumentation des Schulstoffs zu erstellen, um das 
 How to:
 
 1.	git clone <repo>
-2.	Texmamker und LaTex installieren
-2.1.	MS: verwendet miktex
-2.2.	Linux: verwendet texlive
+2.	Texmamker und LaTex Distro  installieren
 3.	Dokument editieren / kompilieren
