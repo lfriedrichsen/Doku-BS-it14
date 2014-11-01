@@ -1,0 +1,90 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+\usepackage{listings}					% Einfügen von Code
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Anwendungsentwicklung}
+\chead{Thema: XAMPP, PHP Grundlagen}
+\rhead{Datum: 30.10.2014}
+\lfoot{}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.1 - \today}
+
+
+% Header
+\title{Beschaffungsablauf}			
+\author{Lars Hendrik Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+\lstset{language=PHP}
+
+\section{Was ist XAMPP?}
+XAMPP ist eine freie Apache Distribution und ist ein beliebtes PHP Entwicklungspaket. Es ist leicht zu installieren und
+auf allen gängigen Plattformen verfügbar (Windows, Linux u. Mac). \\[0.5cm]
+XAMPP steht für:
+
+\begin{itemize}
+	\item X: OS
+	\item Apache: Server (Webserver)
+	\item MySQL: DBMS (Daten-Bank-Management-System)
+	\item PHP: Skriptsprache (meist benutzt)
+	\item Pearl: Skriptsprache
+\end{itemize}
+
+	\subsection{PHP - Grundlegende Funktion}
+	PHP ist eine Skriptsprache, die auf dem \textbf{Server} ausgeführt wird. Daher sieht man auch keinen PHP Code, wenn man
+	sich im Browser den Code anzeigen lässt. 
+	
+	\subsection{PHP - Grundlegende Konventionen}
+	
+	\begin{itemize}
+		\item Klassennamen werden \textbf{groß} geschrieben.
+		\item Variablen werden mit einem Dollarzeichen (\$) vorgestellt definiert
+		\item Variablen werden \textbf{klein} geschrieben
+		\item Bei der den Methodiken wird die \glqq Camel Case\grqq \ Schreibweise benutzt. Bsp.: getType
+		\item \textbf{Methode:} ist die Funktion einer Klasse
+	\end{itemize}
+	
+	Zu den Konventionen sei gesagt, dass ihnen keine weitere Funktion zukommt. Sie dienen lediglich der Übersichtlichkeit des Codes.
+	Außerdem sei hinzugefügt, dass der Parser keine Logkikprüfung vornimmt. Er beachtet lediglich die Syntax
+	\footnote{gleichbedeutend mit Rechtschreibung}.
+	
+	\subsection{Arten der Kommentierung}
+	In php gibt es drei Arten der Kommentierung: 
+		\begin{lstlisting}[frame=single]	
+// foo
+# foo
+/* foo */
+		\end{lstlisting}
+	Die ersten beiden Varianten kommentieren immer nur den Code der jeweiligen Zeile aus. Bei der dritten Variante
+	kann auch über mehrere Zeilen kommentiert werden.
+	
+		
+\end{document}
