@@ -1,0 +1,76 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: ABC-Analyse}
+\rhead{Datum: 05.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{ABC-Analyse}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Die ABC-Analyse}
+Unter der ABC-Analyse versteht man die wertmäßige Gruppierung von zu beschaffenden Waren.
+Sie dient als Hilfsmittel bei der Optimierung der Warenbeschaffung. Je nach Einstufung kommt den Gütern eine
+andere Aufmerksamkeit zu. Der A-Gruppe kommt dem größten Kontrollbedarf zu.
+
+\section{Arbeitsaufträge}
+
+\begin{enumerate}
+	\item \textbf{Beschreiben Sie die Arbeitsschritte der ABC-Analyse!}\par
+		\begin{enumerate}
+			\item Ermittlung des Beschaffungswertes
+			\item Absteigende Sortierung nach Warenwert
+			\item Kumulation der Werte
+			\item Einteilung in die jeweiligen Gruppen
+		\end{enumerate}
+	\item \textbf{Was sind A-, B- und C-Gruppen?}\par
+	Unter den Gruppen versteht man die anteilige Wertigkeit der Güter zum Gesamtwert. Die Gruppen sind
+	in \textbf{A-, B- u. C-Gruppe} unterteilt. Die Verteilung nach Werten sieht wie folgt aus:
+		\begin{itemize}
+			\item \textbf{A-Materialien:} Diese Gruppe hat etwa einen Anteil von \textbf{65-80\%} des Gesamtwertes
+			\item \textbf{B-Materialien:} Diese Gruppe hat etwa einen Anteil von \textbf{15-20\%} des Gesamtwertes
+			\item \textbf{C-Materialien:} Diese Gruppe hat etwa einen Anteil von \textbf{5-10\%} des Gesamtwertes
+		\end{itemize}
+	\item \textbf{Welche Konsequenzen zieht die Materialbeschaffung aus dieser Einteilung?}\par
+	Durch das Verwenden der ABC-Analyse können Schwächen in der Lagerhaltung und im Beschaffungsmarketing
+	aufgedeckt werden. Außerdem kann nun ein Fokus auf die anteilig wertmäßig größten Güter gelegt werden, da hier 
+	eine kleine Änderung (im Preis) sich schon signifikant auf den Erfolg auswirkt.
+\end{enumerate}
+
+\end{document}
+	
