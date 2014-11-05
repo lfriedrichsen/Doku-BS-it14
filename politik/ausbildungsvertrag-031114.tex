@@ -1,0 +1,94 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Hiss}
+\chead{Thema: Der Ausbildungsvertrag}
+\rhead{Datum: 03.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Thema}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Der Ausbildungsvertrag}
+
+	\subsection{Rechte des Auszubildenden}
+		\begin{itemize}
+			\item \textbf{Vergütung:} Recht auf eine angemessene Vergütung
+			\item \textbf{Freistellung:} Freistellung für die Berufsschule
+			\item \textbf{Ausbildungsziel:} Keine Tätigkeiten, die nicht zur Ausbildung gehören 
+			\item \textbf{Kündigungsrecht:} Auszubildende haben ein Kündigungsrecht mit einer Frist von \textbf{4 Wochen}
+			\item \textbf{Zeugnis:} Der Auszubildende hat das Recht auf ein Ausbildungszeugnis
+			\item \textbf{Vertretung:} Unter Umständen muss eine Auszubildendenvertretung gebildet werden
+		\end{itemize}
+	
+	\subsection{Pflichten des Auszubildenden}
+		\begin{itemize}
+			\item \textbf{Lernpflicht:} Der Auszubildende ist verpflichtet die Ausbildung erfolgreich abschließen zu wollen
+			\item \textbf{Sorgfaltspflicht:} Aufgaben sollen ordentlich und sorgfältig erfüllt werden 
+			\item \textbf{Teilnahmepflicht:} Der Besuch der Berufsschule ist verbindlich
+			\item \textbf{Anweisungen:} Der Auszubildende hat die Anweisungen des Ausbilders zu befolgen
+			\item \textbf{Betriebsordnung:} Die Betriebsordnung ist einzuhalten (z.B. Schutzkleidung)
+			\item \textbf{Bewahrungspflicht:} Der Auszubildende hat sorgsam mit den Arbeitsmitteln umzugehen
+			\item \textbf{Schweigepflicht:} Betriebsgeheimnisse sind zu wahren
+			\item \textbf{Krankmeldung:} Es ist eine Krankheitsmeldung abzugeben
+		\end{itemize}
+	
+\section{Aufgaben}
+
+\begin{enumerate}
+	\item Notieren Sie das Ziel der Berufsausbildung! (§1 BBiG)\par
+	
+	\item Welches sind die zwei Lernorte der beruflichen Ausbildung? (§2 BBiG)\par
+	Die Ausbildung findet in der \textbf{Berufsschule} und im \textbf{Ausbildungsbetrieb} statt.
+	\item Wie wird dieses Ausbildungssystem mit den zwei Lernorten genannt?\par
+	Es handelt sich um das \textbf{duale Ausbildungssystem}.
+	\item Was besagt das BBIG zur Ausbildungsdauer? (§5 (1) BBiG)\par
+	Die Ausbildungsdauer bewegt sich zwischen \textbf{zwei und drei Jahren} 
+	\item Damit ein Ausbildungsberuf auch bundesweit anerkannt ist, muss er auch inhaltlich geregelt sein. Wie heißt diese Ordnung?\par
+	Es handelt sich um die \textbf{Ausbildungsordnung}.
+	\item Was ist der Unterschied zwischen \glqq Ausbildungsberufsbild\grqq und \glqq Ausbildungsrahmenplan\grqq ? (§5 (1) BBiG)\par
+	\item Wer muss den Antrag stellen, wenn die Ausbildungszeit verkürzt werden soll und wo muss dieser gestellt werden? (§8 (1) BBiG)\par
+	Der Antrag muss vom \textbf{Auszubildenden und Ausbildenden} bei der \textbf{IHK} gestellt werden.
+	\item Welch Form benötigt der Ausbildungsvertrag und wann ist dies spätestens zu erfüllen? (§11 BBiG)\par
+	Der Vertrag ist an die \textbf{Schriftform} gebunden und muss vor Ausbildungsbeginn vorhanden sein.
+	
+	
+\end{enumerate}
+
+
+\end{document}
+	
