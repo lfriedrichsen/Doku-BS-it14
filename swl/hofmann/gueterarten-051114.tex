@@ -1,0 +1,105 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 1 / Hofmann}
+\chead{Thema: Der Betrieb und sein Umfeld}
+\rhead{Datum: 05.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Der Betrieb und sein Umfeld}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Güterarten}
+Es wird zwischen verschieden Güterarten unterschieden, welche im folgenden dargelegt werden.
+
+\section{Aufgaben}
+
+\begin{enumerate}
+\item \textbf{Recherchieren Sie folgende Begriffe:}
+	
+	\begin{itemize}
+		\item \textbf{Substitutionsgüter:} Güter, die durch andere Güter \textbf{ersetzt} werden, z.B.: Butter <> Margarine
+		\item \textbf{Komplementärgüter:} Güter, die durch andere Güter \textbf{ergänzt} werden, z.B.: Auto -> Benzin 
+		\item \textbf{inferiore Güter:} Güter, die bei steigendem Einkommen weniger nachgefragt werden (einkommensabhängig)
+		z.B.: Auto, Kleidung
+		\item \textbf{superiore Güter:} Güter, die bei steigendem Einkommen überproportional teurer sind als die vorherigen.
+	\end{itemize}
+	
+\item \textbf{Unter welchen Bedingungen ist ein Notebook ein:}
+	\begin{itemize}
+		\item \textbf{Konsumgut?:}\par
+		Das Notebook ist ein Konsumgut, wenn es für den privaten Zweck verwendet wird.
+		\item \textbf{Investitions / Produktionsgut?:}\par
+		Das Notebook ist ein Investitions- / Produktionsgut, wenn es im Betrieb zur Produktion oder zur Arbeitsverrichtung
+		eingesetzt wird.
+	\end{itemize}
+	
+\item \textbf{Was sind Produktionsfaktoren?}
+	\begin{itemize}
+		\item Welche werden in der VWL unterschieden?\par
+		In der VWL unterscheidet man zwischen folgenden Produktionsfaktoren:
+			\begin{itemize}
+				\item \textbf{Arbeit:} Die von den Menschen zur Verfügung gestellte Komponente (geistig wie physisch)
+				\item \textbf{Kapital:} Die zur Produktion notwendigen Güter, z.B.: Maschinen, Anlagen, Werkstoffe.
+				Diese werden auch als \textbf{Realkapital} bezeichnet.
+				\item \textbf{Natur:} Hierunter fallen z.B.: Rohstoffvorkommen und die geografische Begrenzung eines Landes.
+			\end{itemize}
+		\item Welche in der BWL?\par
+		In der BWL unterscheidet man zwischen den folgenden Bereichen:
+		\begin{itemize}
+		\item \textbf{Elementarfaktoren:}
+					
+			\begin{itemize}
+				\item \textbf{Arbeitsleistung:} Die Komponente die benötigt wird, um die Arbeit zielgerecht zu verrichten.
+				\item \textbf{Betriebsmittel:} Die Komponenten die zur Produktion benötigt werden, aber nicht in das
+				Produkt einfließen, z.B.: Maschinen, Gebäude
+				\item \textbf{Werkstoffe:} Die Komponenten die zur Herstellung der Erzeugnisse benötigt werden, 
+				z.B.: Stahl, Holz
+			\end{itemize}
+		\item \textbf{Dispositve Faktoren:}
+			\begin{itemize}
+				\item \textbf{leitende Aufgaben:} Hat eine weisungsbefugte Rolle
+				\item \textbf{Organisation / Aufgabenverteilung:} Nimmt die Verteilung und Verwaltung der Arbeit vor.
+				\item \textbf{Kontrolle:} Stellt fest, ob die Arbeit ordentlich verrichtet wurde.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{enumerate}	
+
+
+\end{document}
+	
