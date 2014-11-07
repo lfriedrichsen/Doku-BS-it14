@@ -1,0 +1,77 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: ABC-Analyse}
+\rhead{Datum: 07.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{ABC-Analyse}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Übungsaufgabe}
+
+	\begin{enumerate}
+		\item \textbf{Begründen Sie die Notwendigkeit einer ABC-Analyse bei der Beschaffung von Materialien!}\par
+		Die ABC-Analyse ist erforderlich, um einen wertmäßigen Eindruck der zu beschaffenden Materialien zu bekommen.
+		Nur so kann die Beschaffung der verschiedenen Materialien optimiert werden.  
+		\item \textbf{Erstellen Sie anhand obiger Angaben eine ABC-Analyse und werten sie diese tabellarisch und grafisch aus!}
+		\item \textbf{Entscheiden und begründen Sie für jedes Material, ob eine genaue Bedarfsermittlung oder eine weniger
+		genaue Bedarfsermittlung / Schätzung erforderlich ist!}\par
+		Bei der \textbf{A-Gruppe} ist auf jeden Fall eine genau Bedarfsermittlung erforderlich, da diese schon
+		über die Hälfte, und mit den Gasfedern schon knappe 80\% ausmachen. Hier hat eine Optimierung direkten
+		Einfluss auf den Erfolg.
+		Bei der \textbf{B-Gruppe} ist eine Abwägung nötig, da hier nicht allzu hohe Werte vorhanden sind. Jedoch 
+		kann auch in dieser Gruppe Bedarf bestehen einen Artikel genauer zu betrachten. Bei geringwertigeren 
+		Materialien reicht eine Schätzung aus, da der Aufwand den Nutzen ansonsten übersteigt.   
+		\item  \textbf{Berechnen Sie für den Monat Januar den voraussichtlichen Bedarf an Schrauben M6 mithilfe
+		der Methode der Durchschnittswerte}\par
+			\begin{tabular}{|l|l|l|l|l|l|}
+				\hline
+				Juli	&	6000	&	September	&	8000	&	November	&	8800\\ \hline
+				August	&	7000	&	Oktober		&	6800	&	Dezember	&	9000\\ \hline
+			\end{tabular}\\[0.5cm]
+			
+		\item \textbf{Ermitteln Sie den Materialbedarf an Schrauben M6 für Januar mithilfe des trendkorrigierten
+		gewogenen Durchschnitts, wenn folgende Gewichtung zugrunde gelegt wird: Juli 6\%, August 8\%, September 15\%,
+		Oktober 18\%, November 23\%, Dezember 30\%!}
+	\end{enumerate}
+
+
+
+\end{document}
+	
