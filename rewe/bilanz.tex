@@ -1,0 +1,140 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 11 / Pr}
+\chead{Thema: Einführung ReWe}
+\rhead{Datum: 03.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Einführung ReWe}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Allgemeine Informationen}
+Andreas verkürzt seine Ausbildung und bittet uns die Mitschriften aus der Unterstufe an ihn weiterzureichen.
+Er wiederum versorgt uns mit den Informationen aus der Mittelstufe. Wer Interesse hat ihn zu ubterstützen, kann sich
+per Mail an ihn wenden.\\[0.5cm] 
+\textbf{mail@andreas-elbert.de}
+
+
+\section{Aufgaben des Rechnungswesen}
+Das Rechnungswesen ist in vier Unterbereiche aufgeteilt (Finanzbuchhaltung, Kosten- u. Leistungsrechnung, Statistik und Planungsrechnung)
+
+	\subsection{Finanzbuchhaltung}
+			\begin{itemize}
+			\item \textbf{Dokumentation:} Alle (vermögenswirksamen) Geschäftsvorfälle werden erfasst
+			\item \textbf{Information / Rechenschaftslegung:} Der Jahresabschluss informiert die Geschäftsleitung und
+			Außenstehende (z.B. Kreditinstitute, Lieferanten) über:
+				\begin{itemize}
+					\item Die Zusammensetzung von Vermögen und Schulden
+					\item Den  Erfolg (Gewinn oder Verlust)
+					\item Art und Höhe der Aufwendungen und Erträge im Einzelnen
+				\end{itemize}
+			\item \textbf{Besteuerungsgrundlage:} Der Jahresabschluss ist Grundlage für die Unternehmensbesteuerung 
+			(Est, KöSt, Ust, GewerbeSt).
+			\item \textbf{Gläubigerschutz:} Kreditgeber können sich ein Bild über die wirtschaftliche / finanzielle
+			Lage des Unternehmens machen.
+			\item \textbf{Beweismittel:} Bücher und Aufzeichnungen können bei Rechtsstreitigkeiten als Beweismittel
+			herangezogen werden. 
+		\end{itemize}			 
+
+	\subsection{Kosten- u. Leistungsrechnung}
+		\begin{itemize}
+			\item \textbf{Betriebsbuchhaltung:} Zuordnung der Kosten zu den einzelnen Abteilungen (Kostenstellen)
+			\item \textbf{Selbstkostenrechnung:} Kalkulationsgrundlage für die Ermittlung der Verkaufspreise 
+		\end{itemize}
+		
+\newpage
+	
+	\subsection{Statistik}
+	Aufbereitung und Auswertung der Zahlen aus der Buchführung und Kosten- u. Leistungsrechnung \\[0.5cm]
+	Die Statistik dient der Überwachung (Controlling) des Unternehmens. Die aufbereiteten Zahlen werden mit denen aus
+	\textbf{früheren} Perioden des eigenen Unternehmens oder mit \textbf{anderen} Unternehmen verglichen.
+	(Perioden- u. Unternehmensvergleich)
+	
+	\subsection{Planungsrechnung}
+	Ermittlung von Planzahlen auf der Grundlage der Zahlen aus den übrigen Gebieten des Rechnungswesens.
+	
+		\begin{itemize}
+			\item Zukünftige Ein - und Ausgaben werden geschätzt und als Richtwert festgesetzt
+			\item Vergleich der geplanten mit den tatsächlichen Zahlen
+			\item Analyse der Ursachen bei Abweichungen
+		\end{itemize}
+		
+	\subsection{Merksatz}
+	Das betriebliche Rechnungswesen kann damit als \textbf{Informations- Steuerungs- und Kontrollsystem} bezeichnet werden.
+	
+\section{Inventur und Inventar}
+
+	\subsection{Die Inventur}
+		\begin{itemize}
+			\item \textbf{Begriff:} Unter der Inventur versteht man die Bestandsaufnahme aller Vermögensgegenstände und Schulden.
+			\item \textbf{Zeitpunkt:}
+				\begin{itemize}
+					\item zum Ende des Geschäftsjahres oder
+					\item bei Gründung, Übernahme, Verkauf oder Auflösung des Unternehmens
+				\end{itemize}				 
+			\item \textbf{Arten:} 
+				\begin{enumerate}
+					\item \textbf{Stichtagsinventur}, d.h. innerhalb von 10 Tagen vor oder nach dem Ende des Geschäftsjahres
+					\item \textbf{Verlegte Inventur}, d.h. bis zu drei Monate vor oder bis zu zwei Monate nach dem Ende des Geschäftsjahres
+					\item \textbf{Permanente Inventur}, d.h. einmal im Kahr muss eine körperliche Bestandsaufnahme
+					erfolgen, ansonsten Rückrechnung oder Fortschreibung
+				\end{enumerate}
+		\end{itemize}
+		
+	\subsection{Das Inventar}
+	Das Inventar ist das Ergebnis der Inventur. Das Inventar wird auch als Bestandsverzeichnis aller
+	Vermögensgegenstände  und der Schulden einer Unternehmung in Staffelform bezeichnet.\\[0.5cm]
+	\textbf{Das Inventar ist wie folgt aufgeteilt:}
+	
+	\begin{itemize}
+	\item \textbf{Anlagevermögen:} Gegenstände die dauerhaft im Unternehmen eingesetzt werden, z.B.: Grundstücke
+	Gebäude, Fuhrpark, BGA\footnote{Betriebs- und Geschäftsausstattung}
+	\item \textbf{Umlaufvermögen:} Gegenstände die nur kurzfristig dem Unternehmen dienen, da sie sich durch die
+	betriebliche Tätigkeit ständig ändert, Bsp.: Rohstoffe, Fertigerzeugnisse, Handelswareen , Hilfs- und Betriebsstoffe,
+	Forderungen\footnote{Kunden schulden dem Unternehmen noch Geld / nicht gezahlte Rechnung}, Kasse\footnote{Bargeld}
+	\item \textbf{langfristige Schulden:} Schulden die das Unternehmen lange hat, z.B. ein Darlehn.
+	\item \textbf{kurzfristige Schulden:} Schulden die das Unternehmen nur kurzfristig hat, z.B. Verbindlichkeiten\footnote{Einkauf auf Ziel}
+	\item \textbf{Eigenkapital:} Das Eigenkapital ist die Differenz aus Vermögen und Schulden:
+	Summe Vermögen - Summe Schulden = Eigenkaapital
+	\end{itemize}
+	
+	Die Reihenfolge der Aufstellung in Inventar ist nach \textbf{Liquidität} sortiert, d.h. von Grundstück nach Kasse. 
+	Bei Schulden wird die Reihenfolge durch die \textbf{Fälligkeit} bestimmt, von Darlehn nach Verbindlichkeiten.
+	
+\end{document}
+	

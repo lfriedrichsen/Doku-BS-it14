@@ -1,0 +1,96 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: Die Anfrage}
+\rhead{Datum: 14.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Die Anfragae}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Der Kaufvertrag}
+
+	\subsection{Willenserklärugen}
+	Damit ein Kaufvertrag zu Stande kommt, bedarf es zweier übereinstimmender WEs\footnote{Willenserklärung}
+	Die WEs sind wie folgt benannt:
+	
+	\begin{enumerate}
+		\item \textbf{Antrag:} Der Antrag kann sowohl vom Käufer als auch vom Lieferanten kommen.
+			Es ist situationsabhängig. Eine einfahe Bestellung ist ein Antrag. Ein verbindliches 
+			Angebot ist auch ein Antrag.
+		\item \textbf{Annahme:} Die Annahme kann sowohl  vom Käufer als auch vom Lieferer kommen. Eine Bestellung auf Grund
+			eines verbindlichen Angebotes ist eine Annahme. Das versenden einer Auftragsbestätigung, auf Grund 
+			einer einfachen Bestellung ist auch eine Annahme.
+	\end{enumerate}
+
+	\subsection{Rechte und Pflichten aus dem Kaufvertarg}
+
+	\begin{itemize}
+		\item \textbf{Pflichten des Verkäufers:}
+			\begin{enumerate}
+				\item Der Verkäufer muss die Ware zu den vereinbarten Bedingugngen liefern.
+				\item Der Verkäufer muss die Eigentumsübertragung ermöglichen.
+			\end{enumerate}
+		\item \textbf{Pflichten des Käufers:}
+			\begin{enumerate}
+				\item Der Käufer ist verpflichtet die Ware anzunehmen und die Eigentumsübertragung
+					nicht zu behindern.
+				\item Der Käufer ist verpflichtet den Kaufvertrag wie vereinbart zu erfüllen (Zahlung)
+			\end{enumerate}
+	\end{itemize}
+
+\newpage
+
+\section{Übungsaufgabe --  Lückentext}
+Ein Kaufvertrag kommt durch zwei \underline{übereinstimmende} Willeenserklärungen zustande. Die zuerst abgegebene
+Willenserklärung nennt man \underline{Antrag}, die zweite \underline{Annahme}. Der \underline{Antrag} zum Abschluss eines
+Kaufvertrags kann vom \underline{Verkäufer} oder vom \underline{Käufer} ausgehen. Das \underline{Angebot} ist der 
+Antrag des Verkäufers. Nimmt der Käufer das \underline{Angebot} durch eine \underline{Bestellung} an, so ist der Kaufvertrag
+\underline{abgeschlossen}.\\[0.5cm]
+Bestellt der Käufer ohne vorheriges \underline{Angebot}, so ist diese Bestellung ein \underline{Angebot}
+des Käufers auf den Abschluss eines kaufvertrages. Bestätigt der Verkäufer die Bestellung durch eine \underline{Auftragsbestätigung},
+so ist der Kaufvertrag \underline{zustanden gekommen}.\\[0.5cm]
+Durch den Abschluss eines Kaufvertrags ubernehmen der Verkäufer under Käufer \underline{Pfllichten}. Der Verkäufer
+\underline{verpflichtet} sich, die Ware \underline{rechtzeitig} und \underline{einwandfrei} zu liefern und dem Käufer
+das \underline{Eigentum} zu \underline{übertragen}. Der Käufer \underline{verpflichtet} sich, den \underline{verinbarten}
+Kaufpreis \underline{rechtzeitig} zu zahlen und die Ware \underline{anzunehmen}.\\[0.5cm]
+Den Abschluss eines Kaufvertrages bezeichnet man daher auch als \underline{Verpflichtungsgeschäft}.
+Bei der Erfüllung des Kaufvertrages erfüllen der Verkäufer und der Käufer ihre Pflichten \underline{vereinbarungsgemäß}.
+Man spricht hier vom \underline{Erfüllungsgeschäft}.
+\end{document}
+	

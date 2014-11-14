@@ -1,0 +1,77 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\					< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 				< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Elektrotechnik}
+\chead{Thema: Das ohmsche Gesetz}
+\rhead{Datum: 07.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Das ohmsche Gesetz}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Das Ohmsche Gesetz}
+Das Ohmsche Gesetz besagt, dass die Stromstärke \textbf{I} in einem Leiter und die Spannung \textbf{U} zwischen den Enden des Leiters direkt proportional sind. Die mathematische Darstellung sieht wie folgt aus:\par
+$U = R * I$
+
+	\subsection{Übungsaufgaben zum ohmschen Gesetz}
+		\begin{enumerate}
+			\item \textbf{Woran läßst sich erkennen, welcher Widerstand der größste ist?}\par
+			R1 ist der größte Widerstand, da die Steigung der Kurve am geringsten ist.
+			\item \textbf{Ermitteln sie die Größen der einzelnen Widerstände R1, R2 und R3}\par
+				\begin{tabular}{|l|l|l|l|}
+					\hline
+							&	R1		&	R2	&	R3\\ \hline
+					U in V	&	50		&	50	&	20\\ \hline
+					I in A	&	0,2		&	0,4	&	0,4\\ \hline
+				\end{tabular}\\[0.5cm]
+			Es gilt das ohmsche Gesetz: $U = R * I$\\
+			Daraus folgt: $R = U / I$\\[0.5cm]
+			Somit ergeben sich folgende Ergebnisse:
+				\begin{enumerate}
+					\item $R1 = 250\ \Omega$
+					\item $R2 = 125\ \Omega$
+					\item $R3 = 50\ \Omega$				
+				\end{enumerate}							
+			\item \textbf{Welche Stromänderung tritt an R2 auf, wenn die Spannung ($U = 50V$) um 20\% erhöht wird?
+			Geben Sie die die prozentuale Änderung der Stromstärke an!}\par
+			Da $U$ und $I$ proportional zueinander sind, verändert sich auch der Strom um 20\%.
+			\item \textbf{Wodurch lässt sich die Stromstärke an R3 von 0,8A auf 0,5A senken?}\par
+			Die Stromstärke lässt sich auf 0,5A senken, wenn man eine Spannung von \textbf{25V} anlegt.
+			
+		\end{enumerate}
+	
+\end{document}

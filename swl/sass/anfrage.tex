@@ -1,0 +1,97 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: Die Anfrage}
+\rhead{Datum: 10.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Die Anfragae}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Die Anfrage}
+
+\begin{itemize}
+ \item \textbf{Zweck der Anfrage:} Informationen über
+ 	\begin{itemize}
+ 		\item mögliche Lieferanten
+ 		\item Bedingungen, unter denen der Lieferer liefert
+ 	\end{itemize}
+ \item \textbf{Form:} Die Anfrage ist grundsätzlich an keine Form gebunden, d.h. sie kann schriftlich, mündlich
+ oder telefonisch erfolgen.
+\end{itemize}
+
+	\subsection{Rechtliche Bedeutung der Anfrage}
+	Eine Anfrage hat keine rechtliche Bedeutung und ist immer unverbindlich. Der Interessent ist also zu keinem
+	Zeitpunkt zum Kauf der angefragten Ware verpflichtet.
+	
+	\subsection{Arten der Anfrage}
+	Es gibt zwei Möglichkeiten der Anfrage:	
+	
+	\begin{enumerate}
+		\item \textbf{allgemeine Anfrage:} Diese Anfrage ist unbestimmt. Hierbei handelt es sich z.B. um Zusendung
+		von Katalogen oder Preislisten.
+		\item \textbf{spezielle Anfrage:} Enthält Bitte um eine Angebot mit speziellen Angaben
+			\begin{itemize}
+				\item Preise
+				\item Menge
+				\item Qualität, Ausführung
+				\item gewünschter Liefertermin
+				\item Transportmittel
+				\item Liefer- und Zahlungsbedingungen
+				\item Herstellen der Betriebsbereitschaft
+				\item Gewährleistung / Garantie
+				\item Entsorgung evtl. Altgeräte
+			\end{itemize}
+	\end{enumerate}
+	
+\newpage	
+	
+	\subsection{Vergleich der eingehenden Angebote}
+	\begin{itemize}
+	\item Preis
+	\item Qualität
+	\item Zahlungsbedingungen
+	\item Zuverlässigkeit
+	\item Lieferungsbedingungen
+	\item guter Service
+	\item gute Garantieleistungen
+	\item Bonus am Jahresende
+	\end{itemize}
+	
+\end{document}
+	

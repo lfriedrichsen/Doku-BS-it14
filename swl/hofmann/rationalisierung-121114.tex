@@ -1,0 +1,79 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 			< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}		% Format des Dokuments
+\usepackage[utf8]{inputenc}			% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}			% Schriftart
+\usepackage {graphicx}				% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 1 / Hofmann}
+\chead{Thema: Rationaliserungen}
+\rhead{Datum: 12.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Der Betrieb und sein Umfeld}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Rationalisierungen}
+
+\begin{enumerate}
+	\item Der technische Fortschritt und die damit verbundene Rationalisierung führte dazu, dass
+		eine Reihe von Berufen in der Vergagenheit stark zurückgedrängt wurden oder ganz verloren gingen.\\
+		\textbf{Kennen sie folgende Berufe?}\par
+		\begin{tabular}{|l|l|}
+			\hline
+			Beruf			&	Kurze Beschreibung\\ \hline
+			Schriftsetzer		&	Erstellungn von Druckvorlagen, Bsp. für den Buchdruck\\ \hline
+			Böttcher		&	Stellen Fässer her\\ \hline
+			Köhler			&	Stellen Kohle her\\ \hline
+			Harzer			&	Harzgewinnung\\ \hline
+			Haderlump		&	Sammeln von alter Kleidung und weiterverkauf an z.B. Mühlen\\ \hline
+			Rademacher		&	Stellt komplizerte Räder her\\ \hline
+		\end{tabular}
+	\item Rationalisierung führt zum Prozess der \glqq schöpferische Zerstörung\grqq. Geben Sie hierzu zwei Beispiele aus
+		der Wirtschaftspraxis an, welche Arbeitsprozesse (oder Berufe) in der Vergangenheit \glqq zersört\grqq wurden
+		und welche neu geschaffen wurden.\par
+		\begin{enumerate}
+			\item Schmied
+			\item Müller
+			\item IT-Berufe
+			\item Gamer
+		\end{enumerate}
+	\item Welche Berufe sind zukunftsfähig, welche Berufe werden durch Rationalisierung in den nächsten Jahren an
+		Bedeutung verlieren?\par
+		Zukunftsfähig sind Berufe, die eine gewisse Qualifikation erfordern und eine geistige Tätigkeit vorraussetzen.
+	\item welche Maßnahmen nkann ein Arbeitnehmer ergreifen, um sich gegen Rationalisierung zu schätzen?\par
+		Arbeitnhemer sind stets angehalten sich weiterzubilden um der Rationalisierung zu entkommen.
+\end{enumerate}
+
+\end{document}
+	

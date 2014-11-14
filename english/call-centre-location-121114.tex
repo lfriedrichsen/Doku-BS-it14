@@ -1,0 +1,90 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}% Format des Dokuments
+\usepackage[utf8]{inputenc}% Interpreter
+\usepackage[ngerman] {babel}% Definition des Sprachraums
+\usepackage[T1] {fontenc}% Schriftart
+\usepackage {graphicx}% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Hiss}
+\chead{Thema: Der Ausbildungsvertrag}
+\rhead{Datum: 10.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{today\author{Lars Friedrichsen}}
+
+\begin{document}
+
+\section{Time-Table}
+
+\begin{tabular}{|l|l|}
+	\hline
+	Time		&	tour item\\ \hline
+	9:30-10:00	&	Company's history and organisation\ldots\\ \hline
+	10:00-12:00	&	marketing, order processing, customer service\\ \hline
+	12:00-13:00	&	lunch break\\ \hline
+	13:00-15:00	&	R\&D\\ \hline
+	15:00-		&	final meeting in the conference room Q\&A\\ \hline
+\end{tabular}
+
+\section{From the customer's point of view, does it matter where the call centre is?}
+	
+	\subsection{The language matters}
+	The idea of outsourcing a call centre could come to a rather quick end, if the language isn't a part of calculation.
+	The customer calling is likely to have an issue of some kind, meaning that he isn't in the best mood. This is a 
+	very important fact to consider, because the communication over the phone isn't like talking to someone face to face.\par
+	Now imagine this customer getting pushed through into a line where a person is answering, who is not utilize the
+	language completely. This can be taken as given due to the fact that a native speaker would be abble to dominate the
+	agent. This leads to a point where the call agent isn't able to offer a proper solution to a person who already is
+	angry. You can imagine that this customer is likely to escalate which puts the call agent in a even worse position.
+	So the customer doesn't get a satisfying sollution to his problem and the company would get a bad review.\par
+	These things lead to the conclusion that the language is the most important thing in this case. So from a customer's
+	standpoint it would be unacceptable.
+
+	\subsection{People have different value systems}
+	Talking about value systems is pretty hard and a personal matter. No person is the same, which leads to the point
+	that everyone has a different value system. From experience I can tell that customers like to ask where the call 
+	agent is located.\par
+	Now, what does it have to do with a person's value system? This can be explained in an easy way. There are people who
+	like to support the local economy instead of paying some random person from some place he didn't even hear about.
+	This is also directly relatet to a company's reputation because the call agent is the first and most often the conly
+	direct contact a customer has with a company.
+
+	\subsection{Don't forget about culture}
+	People are different in many ways and this also relates to the different value systems they have. Culture is also 
+	a huge topic when talking about communication. The same expression in one culture might mean a total different thing
+	in the other. This can be a really strong point which can lead to misunderstandings. To drive this point home:\par
+	There are different cultures even in one country. Now imagine the huge diversity multinationaly. A customer might
+	offends the call agent with a normal expression and wonders why the service person doesn't want to help.
+
+	\subsection{Conclusion}
+	In a nutshell: Due to the points mentioned above the call centre's location can matter a lot especially when it comes
+	to misunderstandings. The company wants to hold customers and the customers want the service. In order to satisfy
+	both needs the location is a big issue and shouldn't be underestimated.
+
+\end{document}
+	

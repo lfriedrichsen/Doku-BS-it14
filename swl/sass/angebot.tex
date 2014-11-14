@@ -1,0 +1,101 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: Angebote}
+\rhead{Datum: 12.11.2014}
+\lfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+\cfoot{}
+\rfoot{\thepage}
+
+
+% Header
+\title{Die Anfragae}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Das verbindliche Angebot}
+
+\textbf{Begriff:} Die Bindung betrifft immer den Verkäufer.Der Käufer ist grundsätzlich nicht gebunden
+	
+	\begin{itemize}
+		\item Der Verkäufer muss sich an alle Angaben des Angebotes halten
+		\item Es ist keine Änderung möglich
+	\end{itemize}
+	
+	\subsection{Schriftliche Angebote}
+	\begin{itemize}
+		\item Auch Angebote unter Abwesenden genannt (Fax)
+		\item Kunde muss umgehend bestellen, d.h.:\\
+		Beförderungszeit + Überlegungszeit + Rückbeförderung = 7 Tage (gesetzl. Regelung)
+	\end{itemize}
+	
+	\subsection{Mündliche Angebote}
+	\begin{itemize}
+		\item Auch Angebot unter Anwesenden genannt
+		\item Müssen während des Gesprächs angenommen werden
+	\end{itemize}
+	\textbf{Merke:} Widerruf möglich. Der Widerruf muss jedoch gleichzeitig mit dem fehlerhaften Angebot
+	beim Kunden eintreffen. Bei einer abgeänderten Bestellung verliert das Angebot seine Gültigkeit.
+
+\section{Das unverbindliche Angebot}
+
+\begin{itemize}
+	\item Grund: Der Verkäufer möchte sein Risiko minimieren, deshalb \underline{Freizeichnungsklauseln}
+		\begin{itemize}
+			\item Preise freibleibend
+			\item Preisänderung vorbehalten
+			\item Lieferung solange Vorrat reicht
+			\item \dots bieten wir ihnen freibleibend an
+		\end{itemize}
+	\item Die Bindung wird komplett aufgehoben
+	\begin{itemize}
+		\item Angebot freibleibend
+		\item Angebot unverbindlich
+		\item \dots ohne Obligo
+	\end{itemize}
+\end{itemize}
+
+\subsection{Befristete Angebote}
+
+\begin{itemize}
+	\item Der Verkäufer gibt den Zeitpunkt im Angebot an, danach hat das Angebot keine Gültigkeit mehr.
+\end{itemize}
+
+\subsection{Schaufensterauslagen / Prospekte}
+\begin{itemize}
+	\item Sind Aufforderungen zum Kauf und keine Angebote an eine bestimmte Person.
+	\item Es entsteht keine rechtliche Verpflichtung an das Angebot
+\end{itemize}
+
+\end{document}
+	
