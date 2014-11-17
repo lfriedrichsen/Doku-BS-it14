@@ -1,0 +1,146 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage{graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 11 / Pr}
+\chead{Thema: Inventur / Inventar}
+\rhead{Datum: 17.11.2014}
+\lfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+\cfoot{}
+\rfoot{\thepage}
+
+
+% Header
+\title{Einführung ReWe}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Übungsaufgaben zur Inventur}
+	
+	\subsection{Stellen Sie fest, welche Inventurart in den folgenden Fällen jeweils gewählt wurde.}
+
+	\begin{enumerate}
+		\item Die Inhaberin eines IT-Unternehmens hat als Bilanzstichtag den 31.08. eines jeden Jahres gewählt.
+			An diesem Tag führt sie auch jeweils die Inventur durch, weil in den verkaufsschwächeren Sommermonaten
+			die Warenbestände besonders niedrig sind.\par
+			\underline{Antwort:} Es handelt sich um die \textbf{Stichtagsinventur}.
+		\item In einem Elektronik-Fachmarkt werden alle Wareneingänge sorgfältig per Computer erfasst. Jeder
+			Warenverkauf wird nicht nur in der Kasse registriert, sondern veranlasst gleichzeitig den Computer,
+			den Warenbestand entsprechend zu korrigieren. Es kann also immer der aktuelle Warenbestand genannt
+			werden. Die Inventur wird abteilungsweise über das Jahr verteilt, um den Geschäftsablauf nicht
+			zu behindern. Bilanzstichtag ist jeweils der 31.12 des Jahres.\par
+			\underline{Antwort:} Es handelt sich um die \textbf{permanente Inventur}.
+		\item In einem anderen Fachmarkt, wird die am 31.01 gemacht, obwohl der Bilanzstichtag der 31.12. Man hat dieses
+			Verfahren gewählt, da die Bestände nach dem Weihnachtsgeschäft besonders niedrig sind.\par
+			\underline{Antwort:} Es handelt sich um die \textbf{verlegte Inventur}.
+	\end{enumerate}
+
+	\subsection{Ordnen Sie folgende Inventarpositionen nach Vermögen und Schulden und sortieren Sie diese nach Liquidität,
+		bzw. Fälligkeit.}
+
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Vermögen} 	& 	\textbf{Schulden}\\ \hline
+			Grundstücke 		& 	Eigenkapital\\ \hline
+			Gebäude 		& 	Darlehn\\ \hline
+			Fuhrpark 		& 	Verbindlichkeiten\\ \hline
+			BGA 			& 	\ \\ \hline
+			Warenvorräte 		& 	\ \\ \hline
+			Forderungen 		& 	\ \\ \hline
+			Kasse 			& 	\ \\ \hline
+			Bank 			& 	\ \\ \hline
+		\end{tabular}
+
+	\subsection{Begünden Sie warum Forderungen liquider sind als Warenbestände}
+
+	Forderungen sind liquider, da die Ware schon verkauft ist. Das heißt, die Ware ist nicht mehr im Lager gebunden. 
+	Die Forderung stellt einen direkten Anspruch auf das Geld vom Kunden dar.
+
+\newpage
+
+	\subsection{Stellen Sie eine Wertrückrechnung nach den Vorschriften der zeitlich verlegten Inventur auf}
+
+		\begin{itemize}
+			\item Bezugspreis: EUR 58,- 
+			\item Bestand lt. Inbentur 16.02: 80 Stk.
+			\item Bestandsänderungen zwischen 02.01 und 16.02:
+				\begin{itemize}
+					\item Zugänge: 15 Stk.
+					\item verkäufe: 25 Stk
+				\end{itemize}
+		\end{itemize}
+			
+		\begin{enumerate}
+			\item \textbf{Wie hoch war der Inventurbestand und -wert am 31.12?}\par
+				\underline{Anwort:} \textbf{Bestand:} $80 + 25 - 15 = 90$\\
+				Der Inventurbestand am 31.12. war 90 Stk.\\
+				\textbf{Wert:} $90 * 58 = 5.520$\\
+				Der Inventurwert beträgt EUR 5.520,-
+			\item \textbf{Im September des letzten Jahres betrug der Bezugspreis EUR 53,95. Um wie viel Prozent
+				hat sich der Bezugspreis verändert?}\par
+				\underline{Antwort:} \textbf{Preisänderung:} $58 / 53,95 - 1 = 7,51\%$\\
+				Der Preis hat sich um 7,51\% verändert.
+		\end{enumerate}
+
+	\subsection{Ermitteln sie für das folgende Unternehmen die Inventurbestände zum Abschlussstichtag!}
+
+		\begin{enumerate}
+			\item Die zeitlich verlegte Inventur am 05.10. hat einen Bestand von EUR 96.500,00 ergeben. In der Zeit
+				bis zum Abschlussstichtag am 31.12 wurden Waren im Wert von EUR 36.000,00 eingekauft.
+				Im gleichen Zeitraum wurden Waren im Wert von EUR 79.000,00 verkauft.\par
+				\underline{Antwort:} \textbf{Bestandsänderungen:} $96.500 + 36.000 - 79.000 = 53.500$\\
+				Der Bestand hat sich wertmäßig auf EUR 53.500 geändert.
+			\item Die zeitlich verlegte Inventur am 15.02 im Folgejahr hat einen wertmäßigen Bestand von EUR 81.000
+				ergeben. In der Zeit vom 02.01 bis zum 15.02 wurden folgende Bestandsänderungen festgehalten:
+					\begin{itemize}
+						\item Einkäufe: EUR 21.300
+						\item Verkäufe: EUR 36.000
+					\end{itemize}
+				\underline{Antwort:} \textbf{Bestandänderungen:} $81.000 - 21.300 + 36.000 = 95.700$\\
+				Der Bestand hat sich auf EUR 95.700 geändert.
+		\end{enumerate}
+	
+	\subsection{Am Geschäftsjahresende wurde ein Eigenkapital von EUR 799.000,00 ermittelt.	Wie hoch ist der Erfolg der
+	Unternehmung zum 31.12. des zweiten Geschäftsjahres, wenn folgende Daten zu Grunde liegen?}
+
+		\begin{itemize}
+			\item EK zum Ende des zweiten Geschäftsjahres: EUR 903.00,00
+			\item Privateinlagen: EUR 21.000,00
+			\item Privatentnahme: EUR 60.000,00
+		\end{itemize}
+
+	\underline{Antwort:} Der Erfolg nach dem zweiten Geschäftsjahr beträgt EUR 104.000,00 (Gewinn) und ergibt sich aus
+	folgender Rechnung:\par
+	$903.000 - 799.00 = 104.000$\\
+	Daraus ergibt sich ein Gewinn von EUR 104.000,00.
+
+\end{document}
+	
