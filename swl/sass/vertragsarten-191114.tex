@@ -1,0 +1,77 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}				% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}				% Schriftart
+\usepackage {graphicx}					% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 8 / Saß}
+\chead{Thema: Vertragsarten}
+\rhead{Datum: 19.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+%\title{}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Vertragsarten}
+
+Käufer und Verkäufer können nach ihrer Rechtsstellung Kaufleute oder Nichtkaufleute sein.
+
+	\begin{enumerate}
+		\item \textbf{Bürgerlicher Kauf:}
+			\begin{itemize}
+				\item beide Parteien sind Privatpersonen
+				\item es liegt kein Handelsgeschäft vor
+				\item Bsp. Lebensmittelhändler kauft von seinem Spediteur eine gebrauchte
+					Taucherausrüstung
+			\end{itemize}
+		\item \textbf{Handelskauf:}
+			\begin{itemize}
+				\item \textbf{zweiseitiger Handelskauf}
+					\begin{itemize}
+						\item beide Parteien sind Kaufleute
+						\item Kaufvertrag wird für geschäftliche Zwecke abgeschlossen
+						\item Bsp. FSG kauft Stahlplatten bei einem Walzwerk
+					\end{itemize}
+				\item \textbf{einseitiger Handelskauf:}
+					\begin{itemize}
+						\item Eine Partei ist Kaufmann, die andere nicht
+					\end{itemize}
+			\end{itemize}
+	\end{enumerate}
+		
+\section{}
+
+
+\end{document}
+	
