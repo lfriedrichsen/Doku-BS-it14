@@ -1,0 +1,98 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 			< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}		% Format des Dokuments
+\usepackage[utf8]{inputenc}			% Interpreter
+\usepackage[ngerman] {babel}			% Definition des Sprachraums
+\usepackage[T1] {fontenc}			% Schriftart
+\usepackage {graphicx}				% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF 1 / Hofmann}
+\chead{Thema: Das ökonomische Prinzip}
+\rhead{Datum: 19.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+%\title{}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Themen für die Klausur}
+
+	\begin{itemize}
+		\item Bedürfnisse / Bedraf
+		\item Güterarten
+		\item Produktionsfaktoren
+		\item ökonomisches Prinzip
+		\item Shareconomy
+	\end{itemize}
+
+\section{Ökonomisches Prinzip}
+
+	\subsection{Aufgaben zum Arbeitsblatt}
+
+	\textbf{\underline{Aufgabe 1:} Beschreiben Sie die Zielsetzungen, die die einzelnen Personen verfolgen!}
+
+		\begin{itemize}
+			\item Verbesserung des Image (UL)
+			\item Hohe Qualität der Anlage (Hr. Jordan)
+			\item Ausgaben begrenzen (Fr. Treiber)
+		\end{itemize}
+
+	\textbf{\underline{Aufgabe 2:} Welche Personen handeln nach dem Maximalprinzip?}\par
+	Frau Treiber verfolgt das Maximalprinzip, da sie die Mittel begrenzt hat und damit das Beste erreichen möchte.\\[0.5cm]
+
+	\textbf{\underline{Aufgabe 3} Welche Personen wenden das Minimalprinzip an?}\par
+	Die UL, da das Ziel festgelegt ist und so wenig wie möglich investiert werden soll. Außerdem folgt er Jordan dem 
+	Minimalprinzip, da er gute Qualität zu einem günstigen Preis möchte.
+
+	\subsection{Geben sie an, ob es sich um das Minimum- oder Maximumprinzip zum tragen kommt (Buch S. 37)}
+
+		\begin{enumerate}
+			\item Für den neuen MP3 Player soll ein bestimmter Marktanteil mit einem geringen Werbeetat erreicht
+				werden:\par
+				\textbf{Minimalrinzip}
+			\item Die LKWs sollen so viele Kunden wie möglich beliefern:\par
+				\textbf{Maximalprinzip}
+			\item Für die Ausstattung eines Mainboards werden die günstigsten Speicherbausteine verwendet:\par
+				\textbf{Minimalrinzip}
+			\item Die Mitarbeiter überlegen, ob sie für das Aufsetzen von 100 PCs den Aufwand so gering wie möglich
+				halten sollen:\par
+				\textbf{Minimalrinzip}
+			\item Bei der Vernetzung sollen möglichst wenig Kabel gelegt werden:\par
+				\textbf{Minimalrinzip}
+			\item Die WG will mit einem monatlichen Haushaltsgeld von EUR 550 auskommen:\par
+				\textbf{Maximalprinzip}
+			\item Der Azubi möchte möglichst viel Fachliteratur für EUR 20 monatlich bekommen:\par
+				\textbf{Maximalprinzip}
+			\item Wegen der Inventur soll die Schließungszeit möglichst gering sein:\par
+				\textbf{Minimalrinzip}
+		\end{enumerate}
+\end{document}
+	
