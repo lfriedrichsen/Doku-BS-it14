@@ -1,0 +1,107 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\				< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 			< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}% Format des Dokuments
+\usepackage[utf8]{inputenc}% Interpreter
+\usepackage[ngerman] {babel}% Definition des Sprachraums
+\usepackage[T1] {fontenc}% Schriftart
+\usepackage {graphicx}% Erlaubt das einfügen von Bildern
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{LF  / Nissen }
+\chead{Thema: Telephone conversation}
+\rhead{Datum: 19.11.2014}
+\rfoot{\thepage}
+\cfoot{}
+\lfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{today\author{Lars Friedrichsen}}
+
+\begin{document}
+
+\section{Telephone phrases}
+
+	\subsection{Listening}
+
+	\begin{enumerate}
+		\item What is the customer's question?\par
+			Customer can't import spreadsheets into the document.
+		
+		\item What help does the operator give?\par
+			The operator wants to call back, because the needed line was busiy.
+	\end{enumerate}
+
+	\subsection{Telephone conversation}
+
+		\begin{itemize}
+			\item Superword helpline, this is Lars speaking. How can I help you?
+			\item The line seems to be bad. Could you speak up a little?
+			\item Sorry to hear that. I'm afraid, that I'm not able to help you here.
+				May I put you through to the PDF department?
+			\item Then please hold the line for a moment.
+			\item I'm sorry but the number is busy.
+			\item So, could I ask my colleges to get back to you?
+			\item Thanks for calling in. Have a nice day.
+		\end{itemize}
+
+	\subsection{Changing questions}
+		\begin{enumerate}
+			\item What time does the flight leave?\par
+				Could you tell at what time the flight leaves?
+			\item Which terminal does it leave from?\par
+				May I ask at which terminal it leaves from?
+			\item How far is the factory from the airport?\par
+				Could you tell me how far the factory is from the airport?
+			\item Which car hiring company is it?\par
+				Can you tell me which car hiring carompany it is?
+			\item Which models do they have available?\par
+				an you tell me what models are available?
+			\item Do I need an international driving licence?\par
+				Could you tell me wheter I need an international driving licence?
+			\item Where are we staying?\par
+				Could you tell me where we are going to stay?
+			\item Is it a nice place?\par
+				Do you know wether it is a nice place?
+			\item Have they booked a meeting room?\par
+				Do you know if they had booked a meeting room?
+		\end{enumerate}
+
+	\subsection{YAE - Yet Another Exercise}
+	
+		\begin{enumerate}
+			\item Look! Tim \underline{is wearing} a tie. Usually he only \underline{wears} T-shirts.
+			\item Trevor \underline{plays} football every Saturday.
+			\item You can't talk to dad now. He is \underline{watching} a football match on TV.
+			\item Ann \underline{is workin} in the garden. She \underline{is playnting} some flowers. She
+				always \underline{plants} all the flowers herself.
+			\item Listen!. My neighbour \underline{is playing} his stupid Elvis Presley record again.
+				He \underline{plays} the same record every evening.
+			\item The River Thames \underline{flows} into the North Sea.
+			\item Graham \underline{speaks} five foreign languages.
+			\item This teacher never \underline{forgets} a face.
+			\item The scientist \underline{is working} on a new formular at the moment.
+			\item The first train to London \underline{leaves} Broadstairs at 3:50\ in the morning.
+			\item I \underline{ am not wearing} a jacket today, because it is too warm.
+		\end{enumerate}
+\end{document}
+	
