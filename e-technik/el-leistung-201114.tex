@@ -1,0 +1,62 @@
+%% cheat sheet
+% Dokumentformatierung
+	% \\					< Zeilenumbruch
+	% \par				< Absatz mit Einrückung
+	% \\[0.5cm]			< Absatz mit Abstand
+	% \newpage			< Neue Seite
+	% \part 				< Teil
+	% \chapter 			< Kapitel
+	% \section 			< Unterüberschrift
+	% \subsection 		< Unterunterüberschrift
+
+% Textformatierung
+	% \glqq{}foo\{}		< Anführungszeichen
+	% \textit{foo}		< Kursiv
+	% \textbf{foo}		< Fett
+	% \underline{foo}	< Unterstrichsen
+
+% ----------------------------------------------------------------------
+
+% Dokumentenklasse / Definitionen
+\documentclass[a4paper,11pt]{scrartcl}	% Format des Dokuments
+\usepackage[utf8]{inputenc}		% Interpreter
+\usepackage[ngerman] {babel}		% Definition des Sprachraums
+\usepackage[T1]{fontenc}		% Schriftart
+\usepackage{graphicx}			% Erlaubt das einfügen von Bildern
+\usepackage{amsmath} 			% Mathematik Paket
+
+% Kopf- Fußzeile
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Elektrotechnik}
+\chead{Thema: Das ohmsche Gesetz}
+\rhead{Datum: 07.11.2014}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{Lars Hendrik Friedrichsen - Version 1.0 - \today}
+
+
+% Header
+\title{Das ohmsche Gesetz}			
+\author{Lars Friedrichsen}
+\date{\today}
+
+% Dokument / Printing 
+\begin{document}
+
+\section{Die elektrische Leistung}
+
+	\begin{itemize}
+		\item Formelzeichen: \textbf{P}
+		\item Einheit: \textbf{W} oder \textbf{VA}
+	\end{itemize}
+
+Daraus ergibt sich die Formel: $P = U * I$
+
+	\subsection{Leistung in Zusammenhang mit einem ohmschen Widerstand}
+	
+	Ist ein ohmscher Widerstand als Verbraucher angegeben ergeben sich folgende Formeln:\\[0.5cm]
+	$P = \frac{U^2}{R}$\\[0.5cm]
+	oder auch\\[0.5cm]
+	$P = I^2 R$
+\end{document}
